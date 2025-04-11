@@ -1,6 +1,8 @@
-FROM --platform=$BUILDPLATFORM misotolar/alpine:3.21.1
+FROM --platform=$BUILDPLATFORM misotolar/alpine:3.21.3
 
-LABEL maintainer="michal@sotolar.com"
+LABEL org.opencontainers.image.url="https://github.com/misotolar/woodpecker-docker-update"
+LABEL org.opencontainers.image.description="Woodpecker plugin for update Docker Hub description and overview"
+LABEL org.opencontainers.image.authors="Michal Sotolar <michal@sotolar.com>"
 
 RUN set -ex; \
     apk add --no-cache --upgrade \
